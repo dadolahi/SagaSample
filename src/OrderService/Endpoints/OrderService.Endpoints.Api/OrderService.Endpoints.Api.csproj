@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.0-preview1.19506.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0-preview1-19509-03" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.2.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\Products\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\SagaSample.Share.Messages\SagaSample.Share.Messages.csproj" />
+    <ProjectReference Include="..\..\..\..\Share\SagaSample.Share.RabbitPublisher\SagaSample.Share.RabbitPublisher.csproj" />
+    <ProjectReference Include="..\..\..\..\Share\SagaSample.Share.Toolkit\SagaSample.Share.Toolkit.csproj" />
+    <ProjectReference Include="..\..\Core\OrderService.Core.Abstraction\OrderService.Core.Abstraction.csproj" />
+    <ProjectReference Include="..\..\Infra\OrderService.Infra.DataLayer\OrderService.Infra.DataLayer.csproj" />
+    <ProjectReference Include="..\..\Infra\OrderService.Infra.Services\OrderService.Infra.Services.csproj" />
+  </ItemGroup>
+
+
+</Project>

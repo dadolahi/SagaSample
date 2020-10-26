@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\SagaSample.Share.Messages\SagaSample.Share.Messages.csproj" />
+    <ProjectReference Include="..\..\..\..\Share\SagaSample.Share.Common.Abstract\SagaSample.Share.Common.Abstract.csproj" />
+    <ProjectReference Include="..\..\Core\OrderService.Core.Abstraction\OrderService.Core.Abstraction.csproj" />
+    <ProjectReference Include="..\OrderService.Infra.DataLayer\OrderService.Infra.DataLayer.csproj" />
+  </ItemGroup>
+
+</Project>
